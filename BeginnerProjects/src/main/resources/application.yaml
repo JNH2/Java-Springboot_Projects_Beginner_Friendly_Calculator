@@ -2,4 +2,6 @@ spring:
   application:
     name: Calculator
   main:
-    web-application-type: none
+    web-application-type: servlet
+server:
+  port: 8084

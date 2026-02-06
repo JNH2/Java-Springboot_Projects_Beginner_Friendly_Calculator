@@ -1,1 +1,9 @@
 # Java-Projects-for-beginner-friendly-
+
+1. Requirement Evolution and Product Lifecycle. Following the successful validation of the core logic in the terminal version, the project entered the web integration phase. This iteration reflects a typical product lifecycle, moving from a localized tool to a web based service (SaaS prototype) to meet broader accessibility requirements.
+
+2. API Design and Implementation. In this branch, I transformed the CLI controller into a RESTful controller. Users can perform interactive calculation tests by directly modifying the choice (operation type), number1, and number2 parameters within the browser address bar. This approach simulates the data exchange process between frontend and backend via APIs in a real production environment.
+
+3. Engineering Decisions. To handle asynchronous web requests, I removed the blocking Scanner logic. By reconfiguring the web-application-type to servlet in the application.yaml and designating the specific port, the system successfully managed web traffic. I reused the exact same Service component from the Main branch, which demonstrates the high efficiency of code reusability in a well architected Spring Boot application.
+
+4. Problem Solving and Debugging Experience. During development, I encountered a Whitelabel Error Page. I resolved this by refining the path mapping and ensuring the package scanning path was correct. Additionally, I optimized the API parameter mapping so that variable names in the URL aligned with Java method signatures, allowing me to utilize the automatic binding mechanism of Spring and reduce redundant code.
