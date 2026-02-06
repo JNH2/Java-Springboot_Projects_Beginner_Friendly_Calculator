@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: Calculator
+  main:
+    web-application-type: none
